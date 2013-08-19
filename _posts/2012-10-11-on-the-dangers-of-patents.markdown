@@ -8,4 +8,4 @@ title: On the dangers of patents ...
 wordpress_id: 80
 ---
 
-[![](http://www.smbc-comics.com/comics/20121011.gif)](http://www.smbc-comics.com/index.php?db=comics&id=2761)
+[![](/assets/20121011.gif)](http://www.smbc-comics.com/index.php?db=comics&id=2761)

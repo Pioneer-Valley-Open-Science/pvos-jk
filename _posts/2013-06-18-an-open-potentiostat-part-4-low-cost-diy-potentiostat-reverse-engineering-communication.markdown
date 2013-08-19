@@ -158,11 +158,7 @@ Granted, I have no idea what these numbers mean, so I copied and pasted them int
     In [6]: savefig("JSpstat_10k_2probe.pdf")
 
 
-
-
-![](https://lh6.googleusercontent.com/I6LkKI_8V3hOAI3xeQbsvdBxBAurJpMTaWrNmIqJHLgkaPaJ04Bkuhfwapuar7oSVMLhzP6-NqBV9OaG71QoqXLg7NSZoykgLahNm4fjMBMgM8U69-iel0lr)
-
-
+![](/assets/JSpstat_10k_2probe.png)
 
 
 Seems reasonable, the current-voltage (I-V) response of a resistor should be a straight line according to Ohm’s law!

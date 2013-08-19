@@ -16,9 +16,7 @@ I (Craig) have had some previous experience working with potentiostats (pstat) i
 As a naive software developer enthralled by the open source spirit of the Python language community, I wanted to automate my tedious materials conductivity characterization experiments.  This commercial instrument does offer computer control with a proprietary and pricey (~$2k) Windows only software package - but this was found to be very limiting for our purposes.  The alternative taken at the time was to utilize the set of low-level commands to replicate part of what their software was doing in an environment fully under my control.  Now, these two-letter bare-bones commands (text GPIB protocol) were listed with brief description in the manual, but that “documentation” was incredibly meager and woefully insufficient.  Luckily, I was able to reverse engineer the commercial program by spying on the computer to instrument communications.  After about of month of hacking, unravelling sequences of hundreds of commands, I finally had a working DIY impedance vs. frequency sweep program running within Python on a Linux system.  (Later, I found out from a Solartron rep. that their contracted out software development took 4 years with direct engineering staff access!)
 
 
-
-
-[![EIS_gen3](http://www.pvos.org/wp-content/uploads/2013/06/EIS_gen3-300x102.png)](http://www.pvos.org/wp-content/uploads/2013/06/EIS_gen3.png)
+![EIS_gen3](/assets/EIS_gen3.png)
 
 
 
