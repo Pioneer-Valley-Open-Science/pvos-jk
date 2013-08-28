@@ -12,7 +12,7 @@ After chatting with Craig, Jake, and Ben over the last 24 hours, we decided to t
 
 Here's a picture of the board schematic and layout so far:
 
-![olm-base_v0.2](/assets/OLM-base_v0.2.png) ![olm-base_brd1](/assets/OLM-base_v0.2brd1.png)
+<a href="/assets/OLM-base_v0.2.png"><img width = 400 src="/assets/OLM-base_v0.2.png" /> </a>
 
 Another very significant change: we added the Atmega328P's  "I2C" interface to the OLM ports. Each "OLM Port" is now a port for a 2x5 ribbon cable connector with (you guessed it) 2x5=10 pins -- namely:
 
@@ -39,16 +39,19 @@ Another very significant change: we added the Atmega328P's  "I2C" interface to 
 
 Here's a closeup of one of the OLM "ports":
 
-![OLMport](/assets/OLMport.png)
+<a href="/assets/OLMport.png"><img width = 400 src="/assets/OLMport.png" /> </a>
+
 
 This redesign both a) simplifies the "base" OLM board, making DIY construction of it easier (and cheaper), b) allows for two more "ports" on the base board, and c) opens up an entire class of new sensor devices: I2C devices, which are quite ubiquitous.  Exciting!
 
 Because one of the first applications we have in mind is an ethernet-capable device that sends sensor readings to an online database, we've also now designed our first OLM "peripheral" -- an ethernet controller chip (the ENCJ2860) and ethernet jack (the same sold by Sparkfun).  The design allows for use of JeeLabs "Ethercard" library, a well-tested and actively maintained library with several nice examples available for the Arduino IDE.  The resultant "OLM Ethernet Peripheral" schematic is pictured here:
 
-![OLM-periph-ether_v0.2sch](/assets/OLM-periph-ether_v0.2sch.png)
+<a href="/assets/OLM-periph-ether_v0.2sch.png"><img width = 400 src="/assets/OLM-periph-ether_v0.2sch.png" /> </a>
+
 
 And here's the board layout so far (cute, isn't it?):
 
-![OLM-perip-ether_v0.2brd](/assets/OLM-perip-ether_v0.2brd.png)
+<a href="/assets/OLM-perip-ether_v0.2brd.png"><img width = 100 src="/assets/OLM-perip-ether_v0.2brd.png" /> </a>
+
 
 

@@ -9,6 +9,8 @@ title: 'An Open Potentiostat (part 4): Low Cost DIY Potentiostat Reverse Enginee
 wordpress_id: 136
 ---
 
+<i>Craig's potentiostat journal:</i>
+
 When I got back to Providence, I first hit the books (well, just “[The Art of Electronics](http://www.amazon.com/Art-Electronics-Paul-Horowitz/dp/0521370957)”) to refresh myself of op-amp circuit design (alright, let’s not pretend that I ever once understood how they worked).   Then, I had the good sense just to plug the DIY pstat into a USB port and see if I could talk to it - it happened to be on a fresh install of Ubuntu 13.04.  After initial glimmers of success using `miniterm`, the connection became spotty. For good measure, I checked `dmesg`; here is what the kernel (3.8.0-19-generic) is thinking when it sees this new device:
 
 
@@ -56,9 +58,6 @@ Eww.... what is that about being “castrated”?!  Anyway, I’ve found that t
 Hmmm... those numbers are a little odd.  Oh right, I have the [source code](https://github.com/Pioneer-Valley-Open-Science/olm-pstat/blob/master/doc/src/Feb21_2013_ASV_CV_3.ino)!  I should be able to figure out how to operate it.  After staring at the code for a while, I realize I just have to enter the right numbers at each prompt (duh!)... but I also discovered a little white lie - the “CV” mode (the Cyclic Voltammetry mode I’m interested in) is actually number “2” not “1” and likewise “ASV” mode ( Anodic Stripping Voltammetry) is actually “1”!  It is so very useful for a scientist/hacker to have the source code of a scientific instrument.  Hastily, I put a 10k resistor between the working and counter electrodes and shorted the reference to counter in order to make a two-probe connection.  Then, I carefully entered the numbers with necessary zero-padding to ensure the right conversion...BOOM:
 
 
-
-
-    
     Starting Voltage (mV-1800mV)
     1800.00
     Ending Voltage (mV-1800mV)
@@ -144,8 +143,6 @@ Granted, I have no idea what these numbers mean, so I copied and pasted them int
 
 
 
-
-    
     In [1]: D = loadtxt("JSpstat_10k_2probe.csv", comments='#')
     In [2]: plot(D[:,0],D[:,1])
     Out[2]: [<matplotlib.lines.Line2D at 0x3d5ff10>]
@@ -157,8 +154,7 @@ Granted, I have no idea what these numbers mean, so I copied and pasted them int
     Out[5]: <matplotlib.text.Text at 0x3d52350>
     In [6]: savefig("JSpstat_10k_2probe.pdf")
 
-
-![](/assets/JSpstat_10k_2probe.png)
+<a href="/assets/JSpstat_10k_2probe.png"><img width = 300 src = "/assets/JSpstat_10k_2probe.png"/></a>
 
 
 Seems reasonable, the current-voltage (I-V) response of a resistor should be a straight line according to Ohm’s law!
