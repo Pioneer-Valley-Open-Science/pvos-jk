@@ -1,42 +1,115 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>{{ site.name }}</title>
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+  <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/foundation.css" />
 
-    </head>
-    <body>
+  <!-- If you are using the gem version, you need this only -->
+  <link rel="stylesheet" href="css/app.css" />
 
-        <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
-            </div>
+  <script src="js/vendor/custom.modernizr.js"></script>
 
-                {{ content }}
-
-            <div class="footer">
-              <div class="contact">
-<a href="/assets/pvosLogoBS.png"><img src="/assets/pvosLogoSmall.png" align = "left"  width=130 style="padding:7px;"></a>
-<a href="/">Pioneer Valley Open Science</a> is a group that formed in Amherst, MA in order to develop scientific projects that are accessible, open, and good for the world. We're greatly inspired by (and attempt to contribute to) <a href="http://publiclab.org">The Public Laboratory for Open Technology and Science</a>. You can reach us at info @ pvos.org.
-
-              </div>
-              <div class="contact">
-                <p>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> <!-- /container -->
-
-    </body>
+</head>
+<body>
+<!-- Nav Bar -->
+ 
+	<div class="row">
+		<div class="large-12 columns">
+			<div class="nav-bar right">
+				<ul class="button-group">
+					<li><a href="#" class="button">Home</a></li>
+					<li><a href="#" class="button">About</a></li>
+					<li><a href="#" class="button">Projects</a></li>
+					<li><a href="#" class="button">Contact</a></li>
+				</ul>
+			</div>
+			<a href="/assets/pvosLogoBS.png"><img src="/assets/pvosLogoSmall.png" align = "left"  width=130 style="padding:7px;"></a>
+			<h1>{{ page.title }}</h1>
+			<hr />
+		</div>
+	</div>
+ 
+<!-- End Nav -->
+	<div class="row">
+		<div class="large-9 columns" role="content">
+			{{ content }}
+ 		</div>
+<!-- Sidebar -->
+ 
+		<aside class="large-3 columns">
+		 
+			<h5>Categories</h5>
+			<ul class="side-nav">
+				<li><a href="#">News</a></li>
+				<li><a href="#">Code</a></li>
+				<li><a href="#">Design</a></li>
+				<li><a href="#">Fun</a></li>
+				<li><a href="#">Weasels</a></li>
+			</ul>
+ 
+			<div class="panel">
+				<h5>Featured</h5>
+				<p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
+				<a href="#">Read More &rarr;</a>
+			</div>
+		</aside>
+ 
+<!-- End Sidebar -->
+	</div>
+ 
+<!-- End Main Content and Sidebar -->
+ 
+ 
+<!-- Footer -->
+ 
+	<footer class="row">
+		<div class="large-12 columns">
+			<hr />
+			<div class="row">
+				<div class="large-6 columns">
+					<p>All content on this site is licenced Creative Commons CC-BY-SA.  Rock on, open scientists.</p>
+				</div>
+				<div class="large-6 columns">
+					<ul class="inline-list right">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+ 
+	<script>
+		document.write('<script src=' +
+		('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+		'.js><\/script>')
+	</script>
+	<script src="js/foundation/foundation.js"></script>
+	<script src="js/foundation/foundation.alerts.js"></script>
+	<script src="js/foundation/foundation.clearing.js"></script>
+	<script src="js/foundation/foundation.cookie.js"></script>
+	<script src="js/foundation/foundation.dropdown.js"></script>
+	<script src="js/foundation/foundation.forms.js"></script>
+	<script src="js/foundation/foundation.joyride.js"></script>
+	<script src="js/foundation/foundation.magellan.js"></script>
+	<script src="js/foundation/foundation.orbit.js"></script>
+	<script src="js/foundation/foundation.placeholder.js"></script>
+	<script src="js/foundation/foundation.reveal.js"></script>
+	<script src="js/foundation/foundation.section.js"></script>
+	<script src="js/foundation/foundation.tooltips.js"></script>
+	<script src="js/foundation/foundation.topbar.js"></script>
+	<script src="js/foundation/foundation.interchange.js"></script>
+	<script>
+		$(document).foundation();
+	</script>
+</body>
 </html>

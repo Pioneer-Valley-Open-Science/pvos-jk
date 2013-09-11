@@ -1,13 +1,19 @@
 ---
 layout: default
-title: pvos.org
+title: PVOS
 ---
-
-<div id="home">
-  <h1>Notes & Events</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+{% for post in site.posts %}
+		<article>
+	 
+			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+			<h3>Written by <a href="#">{{ post.author }}</a> on {{ post.date | date_to_string }}.</h3>
+	 
+			<div class="row">
+				<div class="large-12 columns">
+					{{ post.content }}
+			</div>
+	
+		</article>
+{% endfor %}
+ 
+<!-- End Main Content -->
