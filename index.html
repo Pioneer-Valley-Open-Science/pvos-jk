@@ -2,18 +2,28 @@
 layout: default
 title: PVOS
 ---
-{% for post in site.posts %}
-		<article>
+
+	<div class="large-9 columns" role="content">
+		{% for post in site.posts %}
+			<article>
 	 
-			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-			<h3>Written by <a href="#">{{ post.author }}</a> on {{ post.date | date_to_string }}.</h3>
+				<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+				<h3>Written by <a href="#">{{ post.author }}</a> on {{ post.date | date_to_string }}.</h3>
 	 
-			<div class="row">
-				<div class="large-12 columns">
-					{{ post.content }}
-			</div>
+				<div class="row">
+					<div class="large-12 columns">
+						{{ post.excerpt }}
+				</div>
 	
-		</article>
-{% endfor %}
+			</article>
+		{% endfor %}
+ 		</div>
+
+<!-- Sidebar -->
+		<aside class="large-3 columns">
+		 
+			{% include categories.html %}
  
-<!-- End Main Content -->
+			{% include featured.html %}
+		</aside>
+<!-- End Sidebar -->
