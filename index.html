@@ -31,21 +31,22 @@ title: PVOS
         <h5><a href="#">Projects</a></h5> 
           <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
           <section class="section">
-            <h5 class="title"><a href="#"><img width=100 src="/assets/olm-base_v0.9brd.png"></br></br>Open Lab Monitor</a></h5>
-          </section>
-          <section class="section">
-            <h5 class="title"><a href="#"><img width=100 src="/assets/olm-base_v0.9brd.png"></br></br>Open Lux</a></h5>
+            <h5 class="title"><a href="#"><img width=140 src="/assets/olmLogoAbstract.png"></br></br>Open Lab Monitor</a></h5>
           </section>
            <section class="section">
-            <h5 class="title"><a href="#"><img width=100 src="/assets/olm-base_v0.9brd.png"></br></br>Open Potentiostat</a></h5>
-          </section>
-           <section class="section">
-            <h5 class="title"><a href="#"><img width=100 src="/assets/olm-base_v0.9brd.png"></br></br>Education</a></h5>
+            <h5 class="title"><a href="#"><img width=140 src="/assets/3264451_sensors-10-01782f1.png"></br></br>Open Potentiostat</a></h5>
           </section>
           <section class="section">
             <h5 class="title"><a href="#">
-          <small>Public Lab's</small></br></br><img width=100 src="/assets/3264451_sensors-10-01782f1.png"></br></br>Infragram</a></h5>
+          <small>Public Lab's</small></br></br><img width=100 src="/assets/infragram-logo.png"></br></br>Infragram</a></h5>
           </section>
+          <section class="section">
+            <h5 class="title"><a href="#"><img width=140 src="/assets/olm-base_v0.9brd.png"></br></br>Open Lux</a></h5>
+          </section>
+           <section class="section">
+            <h5 class="title"><a href="#"><img width=140 src="/assets/soldering.jpg"></br></br>Workshops</a></h5>
+          </section>
+          
          
         </div>
  
@@ -58,12 +59,19 @@ title: PVOS
  
    {% for post in site.posts %}
       <!-- Feed Entry -->
+      
       <div class="row">
-        <div class="large-2 columns small-3"><img src="/assets/pvosLogoBS.png" /></div>
+        <div class="large-2 columns small-3"><img width = 100 src="{{ post.image}}" /></div>
         <div class="large-10 columns">
       
-				<h5>{{ post.date | date_to_string }} </br> <a href="{{ post.url }}">{{ post.title }}</a> </br> </h5>  </br>
+				<h5>{{ post.date | date_to_string }} </br> <a href="{{ post.url }}">{{post.title}}</a> </h5>  
 				
+				<!--<a href="{{ post.url }}#disqus_thread"></a> -->
+				
+				
+				   
+    
+    
 				<!-- <h7>{{ post.excerpt}}</h7> -->
 				
 				<!--
@@ -100,4 +108,20 @@ title: PVOS
     </aside>
  
   </div>
+  
+  <!-- disqus stuff -->
+  
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'pvos'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+    
  
