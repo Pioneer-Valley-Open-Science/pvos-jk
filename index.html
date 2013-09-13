@@ -21,41 +21,51 @@ title: PVOS
  		</div>
 -->
 
-
- <div class="row">
  <!-- Nav Sidebar -->
     <!-- This is source ordered to be pulled to the left on larger screens -->
     <div class="large-3 columns ">
-      <div class="panel">
-      <!-- <a href="#"><img src="http://placehold.it/300x240&text=[img]" /></a> -->
-        <h5>Projects</h5> 
-          <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
-          <section class="section">
-          	<a href="#"><img width=140 src="/assets/olmLogoAbstract.png">
-            <h5 class="title">Open Lab Monitor</h5></a>
-            <hr/>
-          </section>
-           <section class="section">
-            <a href="#"><img width=140 src="/assets/3264451_sensors-10-01782f1.png">
-            <h5 class="title">Open Potentiostat</h5></a>
-            <hr/>
-          </section>
-          <section class="section">
-            <a href="#">
-          <img width=100 src="/assets/infragram-logo.png"><h5 class="title"><small>Public Lab's </small>Infragram</h5></a>
-          <hr/>
-          </section>
-          <section class="section">
-            <a href="#"><img width=140 src="/assets/olm-base_v0.9brd.png"><h5 class="title">Open Lux</h5></a>
-            <hr/>
-          </section>
-           <section class="section">
-            <a href="#"><img width=140 src="/assets/soldering.jpg"><h5 class="title">Workshops</h5></a>
-          </section>
-          
-         
-        </div>
- 
+       <div class="section-container accordion" data-section="accordion" data-options="deep_linking: false; one_up: true">
+          <section class="active">
+              <h4 class="title" data-section-title><a href="#">Projects</a></h4>
+    				<div class="content" data-section-content>
+    					<div>
+    						<a href="#"><img width=140 class="hide-for-small" src="/assets/olmLogoAbstract.png">
+            					<h5 class="title">Open Lab Monitor</h5></a>
+            				<hr/>
+          			</div>
+           			<div>
+            				<a href="#"><img width=140 class="hide-for-small" src="/assets/3264451_sensors-10-01782f1.png">
+            					<h5 class="title">Open Potentiostat</h5></a>
+            				<hr/>
+          			</div>
+          			<div>
+            				<a href="#"><img width=100 class="hide-for-small" src="/assets/infragram-logo.png">
+            					<h5 class="title"><small>Public Lab's </small>Infragram</h5></a>
+         					<hr/>
+          			</div>
+          			<div>
+            				<a href="#"><img width=140 class="hide-for-small" src="/assets/olm-base_v0.9brd.png">
+            					<h5 class="title">Open Lux</h5></a>
+          			</div>
+    				</div>
+    			</section>
+    			<section>
+              <h4 class="title" data-section-title><a href="#">People</a></h4>
+    				<div class="content" data-section-content>
+    					<ul class="side-nav">
+    						<li><a href="#">Don Blair</a></li>
+    						<li><a href="#">Craig Versek</a></li>
+    						<li><a href="#">Ian Walls</a></li>
+    						<li><a href="#">Jake Wheeler</a></li>
+    					</ul>
+    				</div>
+    			</section>
+    			<section>
+              <h4 class="title" data-section-title><a href="#">Contact</a></h4>
+    				<div class="content" data-section-content>
+    					Contact info here!
+    				</div>
+    			</section>
       </div>
     </div>
     
@@ -68,7 +78,7 @@ title: PVOS
       <!-- Feed Entry -->
       
       <div class="row">
-        <div class="large-2 columns small-3"><img width = 100 src="{{ post.image}}" /></div>
+        <div class="large-2 columns small-3">{% if post.image %}<img width="100" alt="Image for {{ post.title }}" src="{{ post.image}}" />{% else %}<img src="/assets/pvosLogoSmall.png" alt="ping!" >{% endif %}</div>
         <div class="large-10 columns">
       
 				<div><strong>{{ post.date | date_to_string }}</strong> <small>by <a href="#">{{ post.author }}</a></small></div>
@@ -117,8 +127,6 @@ title: PVOS
       <p><a href="http://publiclab.org"><img src="/assets/publicLabLogo.png" /></a></p>
       </div>
     </aside>
- 
-  </div>
   
   <!-- disqus stuff -->
   
