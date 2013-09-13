@@ -28,23 +28,29 @@ title: PVOS
     <div class="large-3 columns ">
       <div class="panel">
       <!-- <a href="#"><img src="http://placehold.it/300x240&text=[img]" /></a> -->
-        <h5><a href="#">Projects</a></h5> 
+        <h5>Projects</h5> 
           <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
           <section class="section">
-            <h5 class="title"><a href="#"><img width=140 src="/assets/olmLogoAbstract.png"></br></br>Open Lab Monitor</a></h5>
+          	<a href="#"><img width=140 src="/assets/olmLogoAbstract.png">
+            <h5 class="title">Open Lab Monitor</h5></a>
+            <hr/>
           </section>
            <section class="section">
-            <h5 class="title"><a href="#"><img width=140 src="/assets/3264451_sensors-10-01782f1.png"></br></br>Open Potentiostat</a></h5>
+            <a href="#"><img width=140 src="/assets/3264451_sensors-10-01782f1.png">
+            <h5 class="title">Open Potentiostat</h5></a>
+            <hr/>
           </section>
           <section class="section">
-            <h5 class="title"><a href="#">
-          <small>Public Lab's</small></br></br><img width=100 src="/assets/infragram-logo.png"></br></br>Infragram</a></h5>
+            <a href="#">
+          <img width=100 src="/assets/infragram-logo.png"><h5 class="title"><small>Public Lab's </small>Infragram</h5></a>
+          <hr/>
           </section>
           <section class="section">
-            <h5 class="title"><a href="#"><img width=140 src="/assets/olm-base_v0.9brd.png"></br></br>Open Lux</a></h5>
+            <a href="#"><img width=140 src="/assets/olm-base_v0.9brd.png"><h5 class="title">Open Lux</h5></a>
+            <hr/>
           </section>
            <section class="section">
-            <h5 class="title"><a href="#"><img width=140 src="/assets/soldering.jpg"></br></br>Workshops</a></h5>
+            <a href="#"><img width=140 src="/assets/soldering.jpg"><h5 class="title">Workshops</h5></a>
           </section>
           
          
@@ -56,6 +62,7 @@ title: PVOS
     <!-- Main Feed -->
     <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
     <div class="large-6 columns">
+    <h3>The Latest</h3>
  
    {% for post in site.posts %}
       <!-- Feed Entry -->
@@ -64,7 +71,8 @@ title: PVOS
         <div class="large-2 columns small-3"><img width = 100 src="{{ post.image}}" /></div>
         <div class="large-10 columns">
       
-				<h5>{{ post.date | date_to_string }} </br> <a href="{{ post.url }}">{{post.title}}</a> </h5>  
+				<div><strong>{{ post.date | date_to_string }}</strong> <small>by <a href="#">{{ post.author }}</a></small></div>
+				<h5><a href="{{ post.url }}">{{post.title}}</a> </h5>  
 				
 				<!--<a href="{{ post.url }}#disqus_thread"></a> -->
 				
@@ -103,8 +111,11 @@ title: PVOS
     <!-- Right Sidebar -->
     <!-- On small devices this column is hidden -->
     <aside class="large-3 columns hide-for-small">
+    	<div class="panel">
+    	<h4>Partners</h4>
       <p><a href="http://hackerfarm01007.org"><img src="/assets/hackerFarmIcon.png" /></a></p>
       <p><a href="http://publiclab.org"><img src="/assets/publicLabLogo.png" /></a></p>
+      </div>
     </aside>
  
   </div>
