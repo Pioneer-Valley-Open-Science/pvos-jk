@@ -1,0 +1,12 @@
+---
+layout: default
+title: People 
+---
+
+## People 
+
+### Don Blair 
+
+<img width=150 align=left src="/assets/DonBlair.png"> Don Blair is a graduate student in Physics at UMass Amherst, focusing on statistical physics and soft matter. He is also a local organizer for [Public Lab](http://publiclab.org) and is an active contributor to [Pioneer Valley Open Science](http://pvos.org). He is interested in the role that “free and open source”, “citizen”, “civic”, and “grassroots” methods have begun to play in scientific research, at both an individual and an institutional level, and in exploring the various modes in which both experts and non-experts can participate in the goals, practices, and outcomes of science.
+
+

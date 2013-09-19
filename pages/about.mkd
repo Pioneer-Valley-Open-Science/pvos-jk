@@ -1,0 +1,19 @@
+---
+layout: default
+title: PVOS
+---
+
+## Welcome! 
+
+We're a group of folks focused on open source software and hardware for use in scientific research and education.  Please contact us if you'd like to collaborate on any of the [projects](/pages/projects.html) we're currently working on -- or if you'd like to talk about your idea for a new one.
+
+Topics of particular interest to us recently have been:
+
+- Low-cost sensors for environmental monitoring
+- Accessible, hackable alternative energy equipment
+- The role of open source hardware and software in K-12 education
+- Developing open alternatives to commercial scientific instrumentation
+- Open access publishing
+
+Looking forward to working with you!
+

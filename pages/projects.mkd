@@ -1,0 +1,26 @@
+---
+layout: default
+title: PVOS
+---
+
+## Current PVOS Projects 
+
+### Open Potentiostat
+
+DIY open hardware for electrochemistry measurements. 
+
+### OpenLUX
+
+Sensors for visible and near-infrared light on an inexpensive, Arduino-compatible board that can also serve as a PC or embedded Linux (Raspberry Pi / Beagle Bone) peripheral.
+
+### Open Lab Monitor
+
+A device for monitoring environmental conditions in a research / teaching lab, with a ribbon cable 'connector' system allowing for additional peripherals.
+
+### Public Lab's Infragram 
+
+Check out Public Lab's [Infragram](http://infragram.org) project!
+
+### Solar Charging Station for UMass Permaculture
+
+We've been working with [Hackerfarm01007](http://hackerfarm01007.org) on a [solar charging station](http://hackerfarm01007.org/?p=114) for [Umass Permaculture](http://www.umassdining.com/sustainability/permaculture) -- updates soon!
